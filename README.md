@@ -1,7 +1,24 @@
 # 📝 ToDoApp (PERN Stack)
 
-A full-stack **ToDo application** built using the **PERN stack** — **PostgreSQL**, **Express.js**, **React.js**, and **Node.js**.  
-This project demonstrates how to create, read, update, and delete (CRUD) tasks while connecting a React frontend with a PostgreSQL-powered backend.
+A full-stack **ToDo web application** built using the **PERN stack** — **PostgreSQL**, **Express.js**, **React.js**, and **Node.js**.  
+
+This project showcases the complete workflow of a modern full-stack application, demonstrating how to **create, read, update, and delete (CRUD)** tasks using a PostgreSQL database as the persistent storage layer and a React-based frontend for the user interface.
+
+The **frontend** is developed with **React.js**, providing a smooth, dynamic, and responsive user experience. It uses React Hooks like `useState` and `useEffect` to handle state management and side effects efficiently. The interface allows users to easily add new tasks, edit existing ones, and delete completed items — all updated in real time.
+
+The **backend** is powered by **Node.js** and **Express.js**, which together serve as a RESTful API. Each operation (add, read, edit, delete) is exposed through dedicated API endpoints that interact with the PostgreSQL database securely using the `pg` library. The server efficiently manages data transactions, validates requests, and handles communication between the client and database.
+
+The **database layer** is implemented using **PostgreSQL**, storing each to-do item in a structured and relational format. The backend uses SQL queries to perform insertions, updates, deletions, and selections through a connection pool for optimized performance.
+
+This project demonstrates the ability to:
+- Design and implement a **frontend–backend integrated system**
+- Build and consume **RESTful APIs**
+- Perform **CRUD operations** on a relational database
+- Handle **asynchronous requests** using `async/await`
+- Maintain a clean, modular, and scalable project structure
+
+Overall, **ToDoApp (PERN Stack)** is a practical and fully functional example of a full-stack web application, built to strengthen understanding of how different layers of modern web development work together to deliver a seamless user experience.
+
 
 ---
 
@@ -26,7 +43,7 @@ This project showcases my ability to integrate multiple technologies into a real
 
 ## 📁 Project Structure
 
-ToDoApp/
+ToDoApp/</br>
 │</br>
 ├── client/ # React Frontend </br>
 │ ├── public/</br>
@@ -56,20 +73,35 @@ ToDoApp/
 
 ### 1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/<your-username>/todoapp-pern.git
-cd ToDoApp
+git clone https://github.com/suresh-2201/PERN-Todo.git 
+cd PERN ToDoApp
 
-Install dependencies:
+For backend:
 
+cd server
 npm install
 
-Start the server:
 
-nodemon index.js
+For frontend:
 
-Open in browser:
+cd ../client
+npm install
 
-http://localhost:3000
+Run the Project
 
+Open two terminals — one for backend and one for frontend.
+
+Backend
+
+cd server
+npm start
+
+
+Frontend
+
+cd client
+npm start
+
+Then open your browser and visit 👉 http://localhost:3000
 
 Made with ❤️ by Suresh Kumar Prajapat C
